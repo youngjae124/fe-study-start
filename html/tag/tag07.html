@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<label>
+<body>
     <!--label 암묵적인 방법-->
 <label>치즈추가<input type="checkbox"></label>
 <label>양배추추가<input type="checkbox"></label>
@@ -14,7 +14,7 @@
 
 <br><br>
 
-<!-- label 명시저깅ㄴ 방법
+<!-- label 명시적인  방법
     id 속성 + for 속성 -->
     <label for="cheese">치즈추가</label>       <input type="checkbox" id="cheese">
     <label for="cabbage">양배추추가</label>    <input type="checkbox" id="cabbage"> 
@@ -24,7 +24,7 @@
 
     <fieldset>
         <legend>족발 사이즈 선택</legend>
-        <label>족발 대<input type="radio" name="size"></label>
+        <label>족발 대<input type="radio" name="size" disabled></label>
         <label>족발 중<input type="radio" name="size"></label>
         <label>족발 소<input type="radio" name="size"></label>
 
@@ -49,7 +49,7 @@
     <select>
         <optgroup label="김밥"> 
             <option>기본김밥</option>
-            <option selected>치즈김밥</option>
+            <option>치즈김밥</option>
             <option>치즈김밥</option>
         </optgroup>
         <optgroup label="햄버거">
@@ -74,6 +74,22 @@
         이미지 들어간 버튼
     </button>
 
+    <br><br>
+
+    <input type="text" maxlength="8">
+
+    일회용품 받지 않겠습니다 <input type="checkbox" checked>
+
+<br><br>
+<from>
+    <input type="text" value="아이디 입력">
+    <input type="text" placeholder="아이디 입력">
+    <input type="reset">
+    <input type="submit">
+    <br>
+    <button type="button">이건그냥버튼</button> <!--submit 인거처럼 제출 기능이 작동함-->
+    <button type="submit">submit버튼</button>
+    </form>
 
 </body>
 </html>
