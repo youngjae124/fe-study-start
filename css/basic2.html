@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--/* */은 css 주석이다-->
+    <!--내부 스타일 시트 방식--> <!-- h1 을 찾아서 {color :은 색상을 지정} -->
+    <style>
+        /* CSS 쿠드 내부,style 태그 내부/* CSS 코드 작성 영역*/
+        h1 {
+            color : red; 
+        }       
+
+    </style>
+
+    <!--외부 스타일 시트방식-->
+    <!--외부 css 파일 연결-->
+    <!--link rel="stylesheet" href= 파일 경로 입력-->
+    <link rel="stylesheet" href="./basic.css">
+</head>
+<body>
+    <!--인라인 스타일 vs 내부 스타일 방식 2개의 스타일을 적용시키면 
+    인라인 스타일로 적용이 된다-->
+    <h1 style="color: coral;">CSS Basic</h1>
+
+    <!--인라인 스타일 적용 방식 (hn)적용하고 싶은
+    곳에 hn stlye="color: 색상 적용"-->
+
+    <!--외부 내부 스타일 적용순서는 마지막으로 적용된 색으로 지정된다-->
+    <!--적용 순서-->
+    <h2 style="color:green">h2h2h2h2</h2>
+    
+    <h3 style="color: blue;">h3h3h3h3</h3>
+
+    <h4>h4h4h4h4</h4>
+
+</body>
+</html>
