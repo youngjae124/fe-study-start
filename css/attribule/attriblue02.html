@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+
+    <style> 
+        .font-attc1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 100px;
+            font-variant: small-caps;
+            letter-spacing: 30px;
+            line-height: 50px;
+        }
+        /* nomal기본형태, iltalic 이탤릭체, oblique 기울임꼴 표시 */
+        /* font-familt 는 글꼴을 지정할수있고 속성값으로 글꼴명을 적으면(,)로 구분하고
+        1개이상의 글꼴을 나열해 지정해야한다 */
+
+        /* font-size는 텍스트 크기를 변경하고 싶을때 사용하는 속성 
+        속성값으로 는 단위를 포함한 크기를 넣는다 */
+
+        /* font-weight는 텍스트의 굵기를 지정하는데 사용 숫자표기법과 키워드표기법을 사용할수있다
+        숫자 표기법은 100단위로 텍스트 굵기를 표기 100~900까지 값을 사용
+         100이 가장 얇고 900이 가장 굵다 */
+
+        /*키워는 표기법은 텍스트 굵기를 표기하는 방법 키워드는 
+        nomal,bold,bolder 이 있다 nomal은 400과 같은 굵기 bold는 700과 같은 굵기
+        lighter는 부모요소보다 얇게 bolder은 부모요소보다 굵게 지정 */
+
+        /*font-style은 */
+        .font-attr2 {
+            /* 700 bold */
+            font-weight: 700;
+            font-style: italic; 
+            
+        }
+        .font-box {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .inbox {
+            font-size: 2em;
+            /* em은 상대크기 부모요소 크기 대비 이다 */    
+        }
+
+        .inbox {
+            font-size: 2rem;
+            /* rem은 상대크기 */
+            /* html 크기대비 */
+            /* html 기본 텍스트 크기 16px */
+        }
+
+    .nanum-brush-script-regular {
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+
+
+    </style>
+</head>
+<body>
+    <p>기본 택스트</p>
+    <p class="font-attr1">Font font attr1</p>
+
+    <p class="font-attr2">Font attr2 글씨 속성</p>
+
+    <p>
+        오늘의 특가
+        <del>5,000원</del><ins>3,000원</ins>
+    </p>
+
+    <p>
+        오늘의 특가
+        <span style="text-decoration: line-through;"><span>3,000원</span>
+        <span style="text-decoration: underline;">3,000원</span>
+    </p>
+
+    <div class="font-box">  
+        <p class="nanum-brush-script-regular">font box 글자 1</p>
+        <p class="inbox1">font box 글자 2222</p>
+        <p class="inbox2">font box 글자 33333</p>
+    </div>
+
+    <div class="font-box2">  
+        <p class="gugi-regular">font box 글자 1</p>
+        <p>font box 글자 2222</p>
+        <p>font box 글자 33333</p>
+    </div>
+</body>
+</html>
