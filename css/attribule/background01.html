@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> /* auto=이미지 크기 유지 cover=이미지 가로세로 비율 유지,크기 확대 축소 요소의 배경을 채움
+                contain=이미지 가로세로 비율 유지 이미지 배경요소 안에 들어가도록 크기를 확대하거나 축소함 */
+        .box {
+            width: 400px;
+            height: 300px;
+            border:1px solid red;
+        }
+
+        .back {background-color: green;}
+
+        .back-ing {
+            background-image: url(../../images/img3.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box back"></div>
+
+    <div class="box back-ing"></div>
+</body>
+</html>
