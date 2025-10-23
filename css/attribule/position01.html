@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+
+        /*  (위치기준 : 원래 자기가 있어야하는 위치)
+            position 속성 : 위치지정 (배치)
+
+            static : 기본흐름에 따라 배치 (기본값)
+
+            relative :기본흐름에 따라 배치하지만 좌표속성을 사용할수있다 (흐름대로 + 위치 조정가능)
+
+            absolute :기본흐름에 벗어나 절대적인 좌표위치에 따라 배치한다
+            (흐름무시+위치 조정가능 위치기준: 위치조정이 가능한 부모요소의 시작지점 기준)
+            (부모요소 static :x relative :o)
+
+            fixed :기본 흐름에서 벗어나 절대적인 좌표위치에 따라 배치 ,스크롤해도 해당위치에 고정
+                    흐름무시+ 절대좌표 위치 지정
+                    
+            sticky: 요소를 staatic 값처럼 기본흐름에 따라 배치 지정한 좌표의 입계점에 이르면 fixed
+                    흐름ㅁ대로+특정위치에가면 fixed 처럼 고정
+                    값처럼 화면에 고정됨 */
+
+        .red-box {
+            background-color: red;
+
+            position: relative;
+            left: 100px;
+        }
+
+        .green-box {
+            background-color: green;
+            left: 100px;
+            top:30px;
+            /* 기본값 static인 경우 위치지점 이동이 안됨 */
+        }
+
+        .blue-box {
+            background-color: blue;
+
+            position: relative;
+            left: -100px;
+            top:-20px;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+
+</body>
+</html>
