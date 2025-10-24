@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         .comtainer {
+            width: 600px;
+            margin: 0 auto;
+         }
+
+         .box {
+            width: 300px;
+            border:1px solid black;
+            display: inline-block;
+            background-color: lightgray;
+         }
+
+         img {
+            width: 150px;
+            float: left;
+         }
+         .comtainer::after{
+            content: "";
+            display: block;
+            clear:both;
+         }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="box">
+             <img src="../../images/ocean.jpg">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit tempore nostrum blanditiis qui minus nobis error commodi fugit! Eaque ut quasi obcaecati ad veniam eum laudantium fugiat nulla impedit illo.</p>
+        </div>
+        <div class="box">
+             <img src="../../images/ocean.jpg">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit tempore nostrum blanditiis qui minus nobis error commodi fugit! Eaque ut quasi obcaecati ad veniam eum laudantium fugiat nulla impedit illo.</p>
+        </div>
+       
+</body>
+</html>
