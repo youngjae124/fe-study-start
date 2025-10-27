@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+
+            /* transform: translate(50px, 150px); */ /* transform 속성을 사용하면 요소의 특정변형 효과를 지정할수있다 */
+            /* transform: translateX(250px); */ /* 요소를 현재위치에서 n에서x축으로 이동한다 */
+            /* transform:scale(1.4, 2.1) */ /* 요소를 x과y축 만큼 확대 또는 축소한다 */
+            /* transform: scaleY(2); */  /* 요소를 y축 만큼 확대 또는 축소한다 */
+            /* transform: skew(30deg,45deg); */ /* 요소를 x,y축 으로 기울입니다 */
+            /* transform: skewX(60deg); */ /* skewx는 요소를 deg(각도)만큼 x축 방향으로 기울입니다 */
+            /* transform: skewY(10deg); */ /* skewy 는 요소를 주어진 deg(각도)만큼 y축 방향으로 기울입니다 */
+            transform: rotate(130deg); /*rotate 는 요소 deg(각도) 만큼 회전한다 */
+            transform-origin: right bottom;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div>next 다음에 나타내는 요소</div>
+</body>
+</html>
