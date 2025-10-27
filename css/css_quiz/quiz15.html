@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box {
+        width: 100px;
+        height: 100px;
+        border:1px solid black;
+        animation-name: ani1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-direction: alternate;
+        transform: translateX();
+        animation-play-state: running;
+        position: relative;
+        
+/* 요소 이동방법 
+    margin-left
+    position+left
+    transform: translateX(); */
+        }
+
+
+        .box1 {
+        animation-name: ani1;
+        }
+
+        .box:hover {
+            
+            background-color: blue;
+        }
+
+        .container {
+
+        }
+
+
+        @keyframes ani1 {
+            0% {
+                background-color: blue;
+                /* left: 0; */
+                transform: rotate(0deg);
+                transform:translateX(0px)rotate(0deg);
+                
+                
+            }
+            50% {
+                background-color: orange;
+                /* left: 200px; */
+                transform: rotate(360deg);
+                transform:translateX(200px)rotate(360deg);
+            
+            }
+            100% {
+                background-color: pink;
+                /* left: 400px; */
+                transform: rotate(720deg);
+                transform:translateX(400px)rotate(720deg); /* 요소 회전 */
+                
+            
+            }
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="container">
+        <div class="box1" style="transition-timing-function: linear;"></div>
+</body>
+</html>
