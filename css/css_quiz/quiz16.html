@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;   
+            padding: 0;  
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 800px;
+            margin:0 auto;
+            border: 1px solid black;
+
+            display: grid;
+            grid-template-rows: repeat(5, 100px);
+            grid-template-columns:repeat(4, 200px);
+
+
+            grid-template-areas: 
+            "a1 a1 b1 b1 "
+            "c1 c1 c1 c1 "
+            "f1 f1 d1 d1 "
+            "f1 f1 e1 e1 "
+            "g1 g2 g3 g4";
+        }
+
+        
+
+        #a1 {
+            background-color: yellow;
+            grid-area: a1;
+            border: 1px solid black;
+        }
+
+        #b1 {
+            background-color: gray;
+            grid-area:b1;
+            border: 1px solid black;
+        }
+
+        #c1 {
+            background-color: purple;
+            grid-area:c1;
+            border: 1px solid black;
+        }
+
+        #d1 {
+            background-color: pink;
+            grid-area:d1;
+            border: 1px solid black;
+        }
+
+        #e1 {
+            background-color: green;
+            grid-area:e1;
+            border: 1px solid black;
+        }
+
+        #f1 {
+            background-color: lightgray;
+            grid-area:f1;
+            border: 1px solid black;
+        }
+
+        #g1 {
+            background-color: orange;
+            grid-area:g1;
+            border: 1px solid black;
+        }
+
+        #g2{
+            background-color: aqua;
+            grid-area:g2;
+            border: 1px solid black;
+        }
+
+        #g3{
+            background-color: brown;
+            grid-area:g3;
+            border: 1px solid black;
+        }
+        
+        #g4{
+            background-color: black;
+            grid-area: g4;
+            border: 1px solid black;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="a1"></div>
+        <div id="b1"></div>
+        <div id="c1"></div>
+        <div id="d1"></div>
+        <div id="e1"></div>
+        <div id="f1"></div>
+        <div id="g1"></div>
+        <div id="g2"></div>
+        <div id="g3"></div>
+        <div id="g4"></div>
+    </div>
+</body>
+</html>
