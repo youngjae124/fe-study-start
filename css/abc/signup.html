@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  flex-grow: 1;
+  background-color: #4f5359;
+  color: #fff;
+  border: none;
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+.tab-button.active {
+  background-color: #1e8a76; /* 예시로 활성화된 탭 색상 */
+  opacity: 1;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #1e8a76; /* 예시로 버튼 색상 */
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0c63d4;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="tabs">
+    <button class="tab-button active">Sign Up</button>
+    <button class="tab-button">Log In</button>
+</div>
+<h2 class="form-title">Welcome Back!</h2>
+<form class="signup-form">
+    <div class="form-group">
+      <input type="email" id="email" placeholder="Email Address *" required>
+    </div>
+    <div class="form-group">
+      <input type="password" id="password" placeholder=" Password *" required>
+    </div>
+    
+    <button type="submit" class="submit-button">Log In</button>
+</form>
+
+
+    </div>
+
+</body>
+</html>
